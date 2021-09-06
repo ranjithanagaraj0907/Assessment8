@@ -1,0 +1,137 @@
+body{
+    background-image: url(./image/shara\ desert.jpg);
+}
+ .links{
+     list-style-type: none;
+     float: right;
+
+
+ }
+ .links li{
+     display: inline;
+     float: left;
+     padding: 20px;
+    
+ }
+ .logo{
+     float: left;
+ }
+ 
+.logo:hover{
+    cursor: pointer;
+}
+
+
+.grid-container {
+  
+    float: right;
+    margin-top: 100px;
+    height: 200px;
+    width: 200px;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    
+  }
+
+  .grid-item {
+   
+    height: 200px;
+    width: 200px;
+    padding: 10px;
+    background-size: 220px 220px;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    box-shadow: 5px 5px 15px black;
+    text-shadow: 2px 2px 5px black;
+    transition: transform 1s;
+    transition-property: transform;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    margin: 20px;
+  }
+  .grid-item:hover{
+      height: 170px;
+      width: 170px;
+
+  }
+  .info{
+    margin-top: 150px;
+    width: 50%;
+    color: white;
+  }
+
+  .img1
+  {
+      background: no-repeat center url('./image/pic-1.png') ;
+     
+  }
+  
+
+  .img2
+  {
+      background: no-repeat center url('./image/pic-2.png') ;
+      
+  }
+
+  .img3
+  {
+      background: no-repeat center url('./image/pic-3.png') ;
+     
+  }
+
+  .img4
+  {
+      background: no-repeat center url('./image/pic-4.png') ;
+     
+  }
+  .page{
+    margin-top: 200px;
+     margin-left: 20%; 
+     color: white;
+  }
+  @media screen and (min-width: 320px) and (max-width: 500px)
+  { 
+    .grid-container{
+
+    
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+    }
+    .page{
+        flex-direction: column;
+        margin-top: 200px;
+        margin-left: 20%; 
+       
+       
+     }
+ .links{
+
+
+     flex-direction: column;
+    align-items: center;
+ }
+ .links li{
+    font-size: 15px;
+    flex-direction: column;
+
+ }
+ .info{
+    margin-top: 250px;
+    width: 100%;
+  }
+
+
+
+}
+  
+  
+
+  
+
+  
+ 
